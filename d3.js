@@ -1,5 +1,5 @@
 d3.json("complete_file.json").then(data => {
-  console.log(data)
+  console.log()
   // Creating our initial map object
   // We set the longitude, latitude, and the starting zoom level
   // This gets inserted into the div with an id of 'map'
@@ -28,7 +28,7 @@ d3.json("complete_file.json").then(data => {
           d > 50   ? '#6495ED' :
           d > 20   ? '#4682B4' :
           d > 10   ? '#4169E1' :
-                      '#0000FF';
+          d > 5    ? '#0000FF';
   }
 
   function style(feature) {
