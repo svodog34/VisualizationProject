@@ -21,6 +21,8 @@ totalcharges = df_totalcharges.to_dict("list")
 
 df_totalcharges.to_json (r'C:\Github\VisualizationProject\TotalCharges.json')
 
+final_file_data_to_load = pd.read_csv("final_file.csv")
+total_charges_data_to_load = pd.read_csv("TotalCharges.csv")
 
 from flask import Flask, jsonify
 
